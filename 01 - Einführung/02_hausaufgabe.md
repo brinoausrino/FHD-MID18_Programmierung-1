@@ -10,8 +10,6 @@ Hier werden Flussdiagramme und Skizzen eingefügt. Und ein Screenshot der Anwend
 
 ![ein Flussdiagramm](bilder/diagram.png)
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
-
 ### Ergebnis
 
 Hier werden Bilder des Roboters eingefügt
