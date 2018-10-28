@@ -9,7 +9,7 @@ Dabei sollte der Roboter zwischen drei Farben unterscheiden und diese dementspre
 ### Funktionsweise
 
 Das letzteindliche Flussdiagramm:
-![Flussdiagramm](bilder/flowchart.png)
+![Flussdiagramm](bilder/Flowchart.png)
 
 Ein Screenshot des Programms in der Software von Lego Mindstorms:
 ![Screenshot](bilder/screenshot.png)
