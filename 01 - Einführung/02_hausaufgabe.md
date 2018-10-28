@@ -21,7 +21,7 @@ Neben dem Sortierprozess gibt er gleichzeitig visuelles und akustisches Feedback
 Die Statusanzeige leuchtet in rot, grün und orange auf, da Blau hier leider keine Option ist.
 Außerdem spricht er die Voicelines "Red" und "Blue" für die jeweiligen Farben, sowie "No!" für das Aussortieren von Grünem - denn wer mag schon grün?
 
-![Bild 1](bilder/robot_1.png)
-![Bild 2](bilder/robot_2.png)
-![Bild 3](bilder/robot_3.png)
-![Bild 4](bilder/robot_4.png)
+![Bild 1](bilder/robot_1.jpg)
+![Bild 2](bilder/robot_2.jpg)
+![Bild 3](bilder/robot_3.jpg)
+![Bild 4](bilder/robot_4.jpg)
