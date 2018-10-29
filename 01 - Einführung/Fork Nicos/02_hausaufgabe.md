@@ -12,7 +12,7 @@ Das letzteindliche Flussdiagramm:
 ![Flussdiagramm](bilder/Flowchart.png)
 
 Ein Screenshot des Programms in der Software von Lego Mindstorms:
-![Screenshot](bilder/screenshot.png)
+![Screenshot](bilder/screenshot.jpg)
 
 ### Ergebnis
 
