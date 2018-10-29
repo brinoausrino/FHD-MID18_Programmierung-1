@@ -3,10 +3,11 @@
 ## Projekt 1 - Roboter
 
 Hier kommt eine Kurzbeschreibung des Projektes in bis zu 5 Sätzen.
+(https://guides.github.com/features/mastering-markdown/)
 
 ### Funktionsweise
 
-Hier werden Flussdiagramme und Skizzen eingefügt. Und ein Screenshot der Anwendung.
+Hier werden Flussdiagramme und Skizzen eingefügt(https://www.draw.io/). Und ein Screenshot der Anwendung. 
 
 ![alt text](/bilder/diagram.png "ein Flussdiagramm")
 
