@@ -2,12 +2,12 @@
 
 ## Projekt 1 - Roboter
 
-Ziel des Projektes war es, einen Lego Mindstorms Roboter zu bauen und (mit der dafür konzipierten Software) zu programmieren.
-Unsere Gruppe - bestehend aus Sebastian und Nicos - hat sich die Aufgabe überlegt, Smarties bzw. Skittles nach Farbe zu sortieren.
-Dabei sollte der Roboter zwischen drei Farben unterscheiden und diese dementsprechend in verschiedene Auffang-Behältnisse aufteilen.
+Hier kommt eine Kurzbeschreibung des Projektes in bis zu 5 Sätzen.
+(https://guides.github.com/features/mastering-markdown/)
 
 ### Funktionsweise
 
+<<<<<<< HEAD:01 - Einführung/Fork Nicos/02_hausaufgabe.md
 Das letzteindliche Flussdiagramm:
 ![Flussdiagramm](bilder/Flowchart.png)
 
@@ -25,3 +25,12 @@ Außerdem spricht er die Voicelines "Red" und "Blue" für die jeweiligen Farben,
 ![Bild 2](bilder/robot_2.jpg)
 ![Bild 3](bilder/robot_3.jpg)
 ![Bild 4](bilder/robot_4.jpg)
+=======
+Hier werden Flussdiagramme und Skizzen eingefügt(https://www.draw.io/). Und ein Screenshot der Anwendung. 
+
+![ein Flussdiagramm](bilder/diagram.png)
+
+### Ergebnis
+
+Hier werden Bilder des Roboters eingefügt
+>>>>>>> parent of 00c5c5c... Merge branch 'master' of https://github.com/Nocsis/FHD-MID18_Programmierung-1:01 - Einführung/02_hausaufgabe.md
