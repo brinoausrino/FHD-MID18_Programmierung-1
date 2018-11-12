@@ -1,0 +1,14 @@
+program =		'void setup(){',
+				assignments,
+				'}'
+
+assignments =	assignment,{assignment}
+assignment =	vartype , aC , ";"
+			|	aC , "=" , number , ";" 
+			|	vartype , aC , "=" , calculation , ";"
+
+calculation =	number|aC , operator , number
+aC =			"a"|"b"
+number =		"2"|"3"
+vartype =		"int"
+operator =		"+"
