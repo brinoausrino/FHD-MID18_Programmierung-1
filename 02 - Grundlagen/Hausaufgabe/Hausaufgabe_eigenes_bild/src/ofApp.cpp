@@ -18,27 +18,33 @@ void ofApp::draw(){
 	// kreis oben links
 	ofVec2f circlePosition = ofVec2f(50,50);
 	ofVec2f mouse = ofVec2f(mouseX, mouseY);
+	
 	int circleRadius = 30;
 
 	while (circlePosition.x < 1000) {
 			while (circlePosition.y < 1000) {
 
+				float distance = mouse.distance(circlePosition);
+
 				if (timeconstant >= 0 && circlePosition.x == 370 && circlePosition.y == 370  || timeconstant >= 0 && circlePosition.x == 530 && circlePosition.y == 370 || timeconstant >= 0 && circlePosition.x == 370 && circlePosition.y == 530 || timeconstant >= 0 && circlePosition.x == 530 && circlePosition.y == 530) {
 					ofSetColor(0, 0, 255);
+					circleRadius = distance / 30;
 				}
 				else if (timeconstant < 0 && circlePosition.x == 370 && circlePosition.y == 370 || timeconstant < 0 && circlePosition.x == 530 && circlePosition.y == 370 || timeconstant < 0 && circlePosition.x == 370 && circlePosition.y == 530 || timeconstant < 0 && circlePosition.x == 530 && circlePosition.y == 530) {
 					ofSetColor(255);
+					circleRadius = 30;
 				}
 				else if (timeconstant < 0 && circlePosition.x == 450 && circlePosition.y == 370 || timeconstant < 0 && circlePosition.x == 370 && circlePosition.y == 450 || timeconstant < 0 && circlePosition.x == 530 && circlePosition.y == 450 || timeconstant < 0 && circlePosition.x == 450 && circlePosition.y == 530) {
 					ofSetColor(0, 0, 255);
+					circleRadius = distance / 30;
 				}
 				else if (fmod(circlePosition.y - 50, 160) == 0 && fmod(circlePosition.x - 50, 160) == 0) {
 					ofSetColor(0, 0, 255);
-					float distance = mouse.distance(circlePosition);
-
+					circleRadius = distance / 30;
 				}
 				else {
 					ofSetColor(255);
+					circleRadius = 30;
 				}
 
 				ofDrawCircle(circlePosition.x, circlePosition.y, circleRadius);
