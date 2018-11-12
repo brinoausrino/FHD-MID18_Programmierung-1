@@ -13,7 +13,7 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
 	// kreis oben links
-	ofSetColor(247,198,18);//gelb
+	ofSetColor(255);//gelb
 	ofDrawCircle(0,0,450);
 	ofSetColor(52,39,30);//braun
 	ofDrawCircle(0,0,225);
