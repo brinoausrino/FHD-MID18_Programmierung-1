@@ -14,7 +14,10 @@ void ofApp::update(){
 void ofApp::draw(){
 	float time = ofGetElapsedTimef();
 
-	float yellowX = sin(time), yellowY = cos(time), brownX = cos(time), brownY = sin(time);
+	float yellowX = sin(time) * 130;
+	float yellowY = cos(time) * 130;
+	float brownX = cos(time) * 5;
+	float brownY = sin(time) * 5;
 
 	//Background update
 	if (ofGetMouseX() <= 500) { ofBackground(1, 0, 80); }//blau
@@ -45,13 +48,17 @@ void ofApp::draw(){
 
 	if (ofGetMouseX() <= 500) { ofSetColor(247, 198, 18); }//gelb
 	else { ofSetColor(52, 39, 30); }//braun
-	ofDrawCircle(0,0,220);
+	ofDrawCircle(yellowX, yellowY,220);
 
-	ofPopMatrix();
+	ofPushMatrix();
+	ofTranslate(yellowX, yellowY);
 
 	if (ofGetMouseX() <= 500) { ofSetColor(52, 39, 30); }//braun
 	else { ofSetColor(247, 198, 18); }//gelb
 	ofDrawCircle(712,449,130);
+
+	ofPopMatrix();
+	ofPopMatrix();
 
 	//rahmen
 	ofSetColor(0); //schwarz
