@@ -8,5 +8,8 @@ class ofApp : public ofBaseApp{
 		void update();
 		void draw();
 
-		float hypothenuse(float ankathete, float gegenkathete);
+		float hypothenuse(float a, float b);
+
+		float Kathete(float c, float b);
+
 };
