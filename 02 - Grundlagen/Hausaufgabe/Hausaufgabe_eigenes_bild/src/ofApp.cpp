@@ -13,17 +13,37 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+	
 	// kreis oben links
 	ofVec2f circlePosition = ofVec2f(50,50);
 
-	while (circlePosition.x < 1000) {
+	float t = ofGetElapsedTimef();
+	int x = sin(t) * 40;
+
+
+	
+	
+	if (mouseX < 45) 
+		while (circlePosition.x < 1000) {
 			while (circlePosition.y < 1000) {
-				ofDrawCircle(circlePosition.x, circlePosition.y, 30);
+				ofSetColor(255);
+				ofDrawCircle(circlePosition.x, circlePosition.y, mouseX+x);
 				circlePosition.y = circlePosition.y + 80;
 			}
 			circlePosition.x += 80;
 			circlePosition.y = 50;
 		}
+	else {
+		while (circlePosition.x < 1000) {
+			while (circlePosition.y < 1000) {
+				ofSetColor(101);
+				ofDrawCircle(circlePosition.x, circlePosition.y, x);
+				circlePosition.y = circlePosition.y + 80;
+			}
+			circlePosition.x += 80;
+			circlePosition.y = 50;
+		}
+	}
 
 	//rahmen
 	ofSetColor(0); //schwarz
@@ -32,7 +52,7 @@ void ofApp::draw(){
 	ofDrawRectangle(0,980,1000,20);
 	ofDrawRectangle(980,0,30,1000);
 
-	ofSetColor(255);
+	
 	ofDrawBitmapString(titleArtPiece, 20, 985);
 }
 
