@@ -10,5 +10,5 @@ class ofApp : public ofBaseApp{
 
 		void keyPressed(int key);
 
-		string titleArtPiece = "ein gutes Werk von mir";
+		string titleArtPiece = "Klein aber fein ;)";
 };
