@@ -9,14 +9,14 @@ void setup(){
 }
 
 
-program =		"void setup(){ ", expressioins, "}";
+program =		"void setup(){ ", expressions, "}";
 expressions =		expression, {expression};
 expression =		(definition|declaration|both);
 definition =		"int ", variable, {", ", variable}, ";";
 declaration =		variable, " = ", (number|variable), {mathOperation, (number|variable)}, ";";
 both =			"int ", variable, " = ", (number|variable), {mathOperation, (number|variable)}, ";";
-variable =		alphabeticCharacter {, alphabeticCharacter};
-number =		["-"], digit {, digit};
+variable =		alphabeticCharacter, {, alphabeticCharacter};
+number =		["-"], digit, {, digit};
 mathOperation =		(" + "|" - "|" * "|" / ");
 alphabeticCharacter =	("a"|"b"|"c"|"d"|...|"x"|"y"|"z");
 digit =			("0"|"1"|"2"|"3"|"4"|"5"|"6"|"7"|"8"|"9");
