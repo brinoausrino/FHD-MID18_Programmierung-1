@@ -9,4 +9,10 @@ class ofApp : public ofBaseApp{
 		void draw();
 
 		float hypothenuse(float ankathete, float gegenkathete);
+
+		float Kathete(float Ankathete, float Hypothenuse);
+
+
 };
+
+
