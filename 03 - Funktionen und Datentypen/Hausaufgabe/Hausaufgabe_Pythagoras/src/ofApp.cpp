@@ -1,9 +1,9 @@
 #include "ofApp.h"
 
 //--------------------------------------------------------------
-void ofApp::setup(){
-ofBackground(255);
-ofSetCircleResolution(200);
+void ofApp::setup() {
+	ofBackground(255);
+	ofSetCircleResolution(200);
 
 float h_ak = 5;
 float h_gk = 3;
@@ -59,3 +59,11 @@ float ofApp::kathete(float ankathete, float hypothenuse)
 }
 
 
+float ofApp:: Kathete(float Ankathete, float Hypothenuse)
+{
+	float return_wert;
+
+	return_wert = sqrt((Hypothenuse)*(Hypothenuse)-(Ankathete)*(Ankathete));
+
+	return return_wert;
+}

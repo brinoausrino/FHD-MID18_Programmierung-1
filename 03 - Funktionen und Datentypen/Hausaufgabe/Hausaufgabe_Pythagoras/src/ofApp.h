@@ -11,3 +11,5 @@ class ofApp : public ofBaseApp{
 		float hypothenuse(float ankathete, float gegenkathete);
 		float kathete(float ankathete, float hypothenuse);
 };
+
+
