@@ -4,7 +4,7 @@
 
 * oF(openFrameworks) von https://openframeworks.cc/download/ herunterladen
 * entpacken (auf lokalem Laufwerk, da auf Netzlaufwerken Fehler auftreten)
-* Projekt mit Projektgenerator erstellen (im Orderner ProjectGenerator)
+* Projekt mit Projektgenerator erstellen (im Ordner ProjectGenerator)
 
 
 ## Arbeiten mit GIT
