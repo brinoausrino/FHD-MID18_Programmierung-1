@@ -28,6 +28,9 @@ class ofApp : public ofBaseApp{
 		vector<ofVec3f> v_circles;
 		vector<ofVec4f> v_squares;
 		vector<vector<int>> v_triangles;
+		vector<ofVec4f> v_logo;
+		vector<ofVec4f> v_400;
 		vector<char> v_type;
 		
+		ofImage i1, i2;
 };
