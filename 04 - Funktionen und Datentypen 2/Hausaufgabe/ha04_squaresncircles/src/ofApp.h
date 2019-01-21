@@ -23,9 +23,11 @@ class ofApp : public ofBaseApp{
 
 		void randomCircle(int x, int y);
 		void randomSquare(int x, int y);
+		void randomTriangle(int x, int y);
 
 		vector<ofVec3f> v_circles;
 		vector<ofVec4f> v_squares;
+		vector<vector<int>> v_triangles;
 		vector<char> v_type;
 		
 };

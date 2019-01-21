@@ -22,6 +22,10 @@ void ofApp::draw(){
 	for (int i = 0; i < v_squares.size(); i++) {
 		ofDrawRectangle(v_squares[i].x, v_squares[i].y, v_squares[i].z, v_squares[i].w);
 	}
+
+	for (int i = 0; i < v_triangles.size(); i++) {
+		ofDrawTriangle(v_triangles[i][0], v_triangles[i][1], v_triangles[i][2], v_triangles[i][3], v_triangles[i][4], v_triangles[i][5]);
+	}
 }
 
 //--------------------------------------------------------------
@@ -35,6 +39,10 @@ void ofApp::keyPressed(int key){
 			else if (v_type.back() == 's') {
 				v_type.pop_back();
 				v_squares.pop_back();
+			}
+			else if (v_type.back() == 't') {
+				v_type.pop_back();
+				v_triangles.pop_back();
 			}
 			else {
 				cout << "Error: Letztes Element nicht erkannt" << endl;
@@ -62,6 +70,10 @@ void ofApp::mouseDragged(int x, int y, int button){
 void ofApp::mousePressed(int x, int y, int button){
 	if (button == 0) {
 		randomCircle(x, y);
+	}
+
+	if (button == 1) {
+		randomTriangle(x, y);
 	}
 
 	if (button == 2) {
@@ -110,6 +122,22 @@ void ofApp::randomSquare(int x, int y)
 
 	v_squares.push_back(randSquare);
 	v_type.push_back('s');
+}
+
+void ofApp::randomTriangle(int x, int y)
+{
+	vector<int> randTriangle;
+	int randDist = ofRandom(5, 50);
+
+	randTriangle.push_back(x);
+	randTriangle.push_back(y);
+	randTriangle.push_back(x + randDist);
+	randTriangle.push_back(y + randDist);
+	randTriangle.push_back(x - randDist);
+	randTriangle.push_back(y + randDist);
+
+	v_triangles.push_back(randTriangle);
+	v_type.push_back('t');
 }
 
 //--------------------------------------------------------------
