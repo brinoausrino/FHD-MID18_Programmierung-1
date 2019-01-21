@@ -39,7 +39,7 @@ void calculate(int n){
 }
 
 ```
---> Zwischen O(1) und O(log(n))
+--> O(1) [1mal mehr als n]
 
 Welche Raumkomplexität hat folgender Algorithmus?
 
